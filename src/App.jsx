@@ -11,22 +11,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Benefits />
-          <Collaboration />
-          <Services />
-          <Pricing />
-          <Roadmap />
-        </Routes>
+        <Hero />
+        <Benefits />
+        <Collaboration />
+        <Services />
+        <Pricing />
+        <Roadmap />
         <Footer />
       </div>
 
       <ButtonGradient />
-    </BrowserRouter>
+    </>
   );
 };
 
