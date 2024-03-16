@@ -111,12 +111,12 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  `npm i falcon-ui`;
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "npm Install",
     text: collabText,
   },
   {
@@ -227,7 +227,7 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
+    title: "Interactive",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
@@ -235,8 +235,8 @@ export const benefits = [
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Reusability",
+    text: "Pick the components you need. Copy and paste the code into your project and customize to your needs. The code is yours.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -244,8 +244,8 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "User-Friendly",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
