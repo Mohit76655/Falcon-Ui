@@ -41,7 +41,7 @@ const Hero = () => {
             Unleash the power of Your Creativity with Falcon Ui. Upgrade your
             Frontend Game with Falcon Ui.
           </p>
-          <Button href="/pricing" white>
+          <Button to="/Components" white>
             Get started
           </Button>
         </div>
