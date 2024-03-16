@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Roadmap from "./components/Roadmap";
+import Components from "./components/Components";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -19,7 +20,7 @@ const App = () => {
           <Route path="/features" element={<Benefits />} />
           <Route path="/how-to-use" element={<Collaboration />} />
           <Route path="/Services" element={<Services />} />
-          <Route path="/Roadmap" element={<Roadmap />} />
+          <Route path="/Components" element={<Components />} />
         </Routes>
         <Footer />
       </div>
