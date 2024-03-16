@@ -3,6 +3,7 @@ import Components from "./Components";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Cardcomp from "./allComponents/Cardcomp";
 
 const Card = () => {
   const codeString = `<div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
@@ -28,7 +29,7 @@ const Card = () => {
   return (
     <div className="flex flex-row h-[calc(100%-240px)]">
       <Components />
-      <div className=" bg-transparent h-full  w-full  ">
+      <div className=" bg-transparent h-full  w-full mx-24 ">
         <div className="p-5">
           <h2 className=" font-bold text-4xl">Card</h2>
           <p className=" text-slate-400 mt-5">
@@ -36,9 +37,13 @@ const Card = () => {
           </p>
         </div>
 
-        <div className=""></div>
+        <span className="p-5 text-gray-400">Preview </span>
 
-        <div className="p-5 w-[50%] max-w-2xl min-w-[25rem] bg-[#3a404d] rounded-md overflow-hidden">
+        <div className="relative z-1 grid gap-5 lg:grid-cols-2">
+          <Cardcomp />
+        </div>
+
+        <div className="my-12 p-5 w-[50%] max-w-2xl min-w-[25rem] bg-[#3a404d] rounded-md overflow-hidden">
           <span className=" text-gray-400">Code</span>
           <SyntaxHighlighter
             language="jsx"
