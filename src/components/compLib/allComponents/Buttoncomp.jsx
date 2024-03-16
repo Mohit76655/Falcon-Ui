@@ -26,7 +26,7 @@ const Buttoncomp = () => {
     return to ? renderLink() : renderButton();
   };
 
-  return <Button />;
+  return <Button>hello</Button>;
 };
 
 export default Buttoncomp;

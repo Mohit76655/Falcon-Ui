@@ -5,7 +5,30 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlig
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const ButtonUi = () => {
-  const codeString = ``;
+  const codeString = `const Button = ({ className, to, onClick, children, px, white }) => {
+    const classes = button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 {dollar sign}{
+      px || "px-7"
+    } {dollar sign}{white ? "text-n-8" : "text-n-1"} {dollar sign}{className || ""};
+    const spanClasses = "relative z-10";
+
+    const renderButton = () => (
+      <button className={classes} onClick={onClick}>
+        <span className={spanClasses}>{children}</span>
+        {ButtonSvg(white)}
+      </button>
+    );
+
+    const renderLink = () => (
+      <Link to={to} className={classes}>
+        <span className={spanClasses}>{children}</span>
+        {ButtonSvg(white)}
+      </Link>
+    );
+
+    return to ? renderLink() : renderButton();
+  };
+
+  return <Button>hello</Button>;`;
 
   return (
     <div className="flex flex-row h-[calc(100%-240px)]">
@@ -20,7 +43,7 @@ const ButtonUi = () => {
 
         <span className="p-5 text-gray-400">Preview </span>
 
-        <div className=" p-5">
+        <div className="p-8">
           <Buttoncomp />
         </div>
 
@@ -31,7 +54,7 @@ const ButtonUi = () => {
             style={atomOneDark}
             customStyle={{ padding: "25px", fontSize: "1rem" }}
           >
-            {``}
+            {codeString}
           </SyntaxHighlighter>
         </div>
       </div>
