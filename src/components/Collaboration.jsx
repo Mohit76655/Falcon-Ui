@@ -10,7 +10,7 @@ const Collaboration = () => {
       <Section crosses>
         <div className="container lg:flex">
           <div className="max-w-[25rem]">
-            <h2 className="h2 mb-4 md:mb-8">how to use with npm</h2>
+            <h2 className="h2 mb-4 md:mb-8">Use It with npm</h2>
 
             <ul className="max-w-[22rem] mb-10 md:mb-14">
               {collabContent.map((item) => (
