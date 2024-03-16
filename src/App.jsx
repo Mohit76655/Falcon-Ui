@@ -6,9 +6,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Roadmap from "./components/Roadmap";
-import Components from "./components/Components";
+import Components from "./components/compLib/Components";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Card from "./components/compLib/Card";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/how-to-use" element={<Collaboration />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Components" element={<Components />} />
+          <Route path="/Card" element={<Card />} />
         </Routes>
         <Footer />
       </div>
