@@ -14,7 +14,7 @@ const Components = () => {
               </Link>
             </li>
             <li className="p-1 hover:translate-x-1 transition-all ease-in cursor-pointer">
-              <Link to="/" title="Card">
+              <Link to="/ButtonUi" title="Button">
                 Button
               </Link>
             </li>

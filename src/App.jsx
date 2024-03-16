@@ -10,6 +10,8 @@ import Components from "./components/compLib/Components";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Card from "./components/compLib/Card";
+import Buttoncomp from "./components/compLib/allComponents/Buttoncomp";
+import ButtonUi from "./components/compLib/ButtonUi";
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/Services" element={<Services />} />
           <Route path="/Components" element={<Components />} />
           <Route path="/Card" element={<Card />} />
+          <Route path="/ButtonUi" element={<ButtonUi />} />
         </Routes>
         <Footer />
       </div>
