@@ -16,13 +16,45 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Samples Ui Design made for creators."
+          title="Samples Ui Design made for Developers."
           text="Falcon unlocks the potential of Developers"
         />
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
+            <nav
+        id="navWrap"
+         className="w-[1200px] py-2 px-0  top-0 z-30 backdrop-blur-2xl"
+      >
+        <div
+          id="nav-content"
+          className="w-[1100px] flex items-center  justify-between py-4 px-0 mx-auto my-0"
+        >
+          <h2 className=" font-extrabold text-xl">Samples</h2>
+          <ul id="nav-content-ul" className="flex items-center gap-2 list-none">
+            <li className="mx-6 my-0">
+              <a className="font-Gilroy decoration-0 text-[1rem] font-medium #fff relative cursor-pointer" >Home</a>
+            </li>
+            <li className="mx-6 my-0">
+              <a className="font-Gilroy decoration-0 text-[1rem] font-medium #fff relative cursor-pointer">Skills</a>
+            </li>
+            <li className="mx-6 my-0">
+              <a className="font-Gilroy decoration-0 text-[1rem] font-medium #fff relative cursor-pointer">Projects</a>
+            </li>
+            <li className="mx-6 my-0">
+              <a className="font-Gilroy decoration-0 text-[1rem] font-medium #fff relative cursor-pointer ">Contact Me</a>
+            </li>
+            <button
+              className=" text-[0.9rem] font-medium flex items-center justify-center py-[0.6rem] px-8 border-none outline-none rounded cursor-pointer transition-all duration-0.3 ease-in bg-gradient-to-r from-purple-500 to-violet-600 hover:text-violet-400 hover:outline-violet-400 hover:from-black hover:to-black"
+              id="contact-btn"
+              onClick={() => {}}
+            >
+              Hire Me
+            </button>
+          </ul>
+          </div>
+          </nav>
               <img
                 className="w-full h-full object-cover md:object-right"
                 width={800}
@@ -47,36 +79,35 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15 opacity-0 hover:opacity-[1] cursor-pointer">
-              <h4 className="h4 mb-4 ">Photo editing</h4>
+              <h4 className="h4 mb-4 ">Ai Integration</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                 Coming Soon!
                 </p>
               </div>
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4"> UI Component Generation</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nostrum tempore nemo.
                 </p>
 
                 <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
+                  {brainwaveServicesIcons.map((item, index ,{isActive}) => (
                     <li
                       key={index}
                       className={`rounded-2xl flex items-center justify-center ${
                         index === 2
+            
                           ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15" 
                       }`}
                     >
                       <div
                         className={
-                          index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
+                          index === 2 
+                            ? "flex items-center justify-center w-full  h-full bg-n-7 rounded-[1rem]"
                             : ""
                         }
                       >
