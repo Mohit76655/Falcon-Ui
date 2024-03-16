@@ -8,7 +8,7 @@ const Generating = ({ className }) => {
       } text-base`}
     >
       <img className="w-5 h-5 mr-4" src={loading} alt="Loading" />
-      <span className=" text-slate-300">Eg. Search</span>
+      <input placeholder="Search" className="text-slate-300 bg-transparent outline-none" />
     </div>
   );
 };
