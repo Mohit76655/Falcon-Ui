@@ -13,6 +13,7 @@ import Card from "./components/compLib/Card";
 import Buttoncomp from "./components/compLib/allComponents/Buttoncomp";
 import ButtonUi from "./components/compLib/ButtonUi";
 import Navui from "./components/compLib/Navui";
+import DocComp from "./components/compLib/allComponents/DocComp";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/how-to-use" element={<Collaboration />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Components" element={<Components />} />
+          <Route path="/DocComp" element={<DocComp />} />
           <Route path="/Card" element={<Card />} />
           <Route path="/ButtonUi" element={<ButtonUi />} />
           <Route path="/Navui" element={<Navui />} />
