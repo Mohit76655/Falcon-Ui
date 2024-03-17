@@ -29,11 +29,11 @@ const Components = () => {
                 NavBar
               </Link>
             </li>
-            <li className="p-1 hover:translate-x-1 transition-all ease-in cursor-pointer mx-10 mb-6">
-              <Link to="/BentoBox" title="BentoBox">
-                Form
+            {/* <li className="p-1 hover:translate-x-1 transition-all ease-in cursor-pointer mx-10 mb-6">
+              <Link to="/TextInput" title="TextInput">
+                Textinput
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </aside>
