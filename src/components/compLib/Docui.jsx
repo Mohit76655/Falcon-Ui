@@ -1,10 +1,10 @@
 import React from "react";
-import Navcomp from "./allComponents/Navcomp";
+import DocComp from "./allComponents/DocComp";
 import Components from "./Components";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const Navui = () => {
+const Docui = () => {
   const codeString = `<nav
     id="navWrap"
     className="w-[1200px] py-2 px-0  top-0 z-30 backdrop-blur-2xl"
@@ -60,7 +60,7 @@ const Navui = () => {
         <span className="p-5 text-gray-400">Preview </span>
 
         <div className=" m-5 bg-gray-900 rounded-md">
-          <Navcomp />
+          <DocComp />
         </div>
 
         <div className="my-12 p-5 w-[50%] max-w-2xl min-w-[25rem] bg-[#3a404d] rounded-md overflow-hidden">
@@ -78,4 +78,4 @@ const Navui = () => {
   );
 };
 
-export default Navui;
+export default Docui;
