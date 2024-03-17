@@ -5,8 +5,6 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlig
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Docui = () => {
-
-
   return (
     <div className="flex flex-row h-[calc(100%-240px)]">
       <Components />
@@ -14,10 +12,11 @@ const Docui = () => {
         <div className="p-5">
           <h2 className=" font-bold text-4xl">Docs</h2>
           <p className=" text-slate-400 mt-5">
-          This is  a component library. It's a collection of re-usable components that you can copy and paste into your apps.
+            This is a component library. It's a collection of re-usable
+            components that you can copy and paste into your apps.
           </p>
         </div>
-        <div className=" m-5 bg-gray-600 rounded-md mt-10">
+        <div className=" m-5 bg-transparent rounded-md mt-10">
           <DocComp />
         </div>
       </div>
