@@ -50,7 +50,7 @@ export const navigation = [
   {
     id: "2",
     title: "Document",
-    url: "/document",
+    url: "/DocUi",
   },
 ];
 
