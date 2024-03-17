@@ -110,21 +110,13 @@ export const roadmap = [
   },
 ];
 
-export const collabText = `npm i falcon-ui`;
+export const collabText = ` npm i falcon-ui`;
 
 export const collabContent = [
   {
     id: "0",
     title: "Npm Install",
     text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
   },
 ];
 

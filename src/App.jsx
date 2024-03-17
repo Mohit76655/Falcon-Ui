@@ -15,6 +15,7 @@ import ButtonUi from "./components/compLib/ButtonUi";
 import Navui from "./components/compLib/Navui";
 import DocComp from "./components/compLib/allComponents/DocComp";
 import Docui from "./components/compLib/Docui";
+import TextInput from "./components/compLib/allComponents/TextInput";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/Card" element={<Card />} />
           <Route path="/ButtonUi" element={<ButtonUi />} />
           <Route path="/Navui" element={<Navui />} />
+          <Route path="/TextInput" element={<TextInput />} />
         </Routes>
         <Footer />
       </div>
